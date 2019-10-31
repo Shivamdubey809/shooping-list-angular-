@@ -4,13 +4,31 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import {HeaderComponent} from './header/header.component';
+import { RecipiesComponent } from './recipies/recipies.component';
+import { RecipiesListComponent } from './recipies/recipies-list/recipies-list.component';
+import { RecipiesDetailComponent } from './recipies/recipies-detail/recipies-detail.component';
+import { RecipiesItemComponent } from './recipies/recipies-list/recipies-item/recipies-item.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { DropdownDirective } from './shared/dropdown.directive';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    RecipiesComponent,
+    RecipiesListComponent,
+    RecipiesDetailComponent,
+    RecipiesItemComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
+    DropdownDirective,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
